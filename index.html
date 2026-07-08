@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday, Daisy 🎂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts-bg" id="heartsBg" aria-hidden="true"></div>
+
+<div class="photo-collage" aria-hidden="true">
+  <img class="photo photo-1" src="images/photo-couple-bw.jpg" alt="">
+  <img class="photo photo-2" src="images/photo-selfie.jpg" alt="">
+  <img class="photo photo-3" src="images/photo-couple-hug.jpg" alt="">
+</div>
+
+<div class="stage">
+  <div class="card">
+
+    <div class="progress" role="img" aria-label="Step 1 of 4">
+      <span class="dot active" data-dot="1"></span>
+      <span class="dot" data-dot="2"></span>
+      <span class="dot" data-dot="3"></span>
+      <span class="dot" data-dot="4"></span>
+    </div>
+
+    <div class="pages">
+
+      <div class="page active" id="page1">
+        <div class="page-icon">🎂</div>
+        <h1>Hi Daisy ❤️</h1>
+        <p>I made something special just for you.</p>
+        <button class="btn" onclick="nextPage()">Start</button>
+      </div>
+
+      <div class="page" id="page2">
+        <h2>💌 A Letter</h2>
+        <p id="letter" class="letter" aria-live="polite"></p>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+
+      <div class="page" id="page3">
+        <h2>🌸 Reasons Why You're Amazing</h2>
+        <ul class="reasons">
+          <li><span class="reason-icon">❤️</span> You make me smile.</li>
+          <li><span class="reason-icon">🌟</span> You're kind.</li>
+          <li><span class="reason-icon">😊</span> You're always supportive.</li>
+          <li><span class="reason-icon">💖</span> You're one of a kind.</li>
+        </ul>
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+
+      <div class="page" id="page4">
+        <div class="page-icon spin">🎁</div>
+        <h1>Surprise!</h1>
+        <p>I hope this made you smile.</p>
+        <h2>Happy Birthday, Daisy!</h2>
+        <p class="subtext">I appreciate you ❤️</p>
+        <button class="btn btn-ghost" onclick="restart()">Play again</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
