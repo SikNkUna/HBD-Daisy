@@ -75,7 +75,7 @@ function spawnHeart(){
   if(!bg || prefersReducedMotion) return;
   const heart = document.createElement('span');
   heart.className = 'floating-heart';
-  heart.textContent = ['❤️','🥳','💕','🌸'][Math.floor(Math.random()*4)];
+  heart.textContent = ['❤️','💗','💕','🌸'][Math.floor(Math.random()*4)];
   const startX = Math.random() * 100;
   const drift = (Math.random() * 120 - 60) + 'px';
   const duration = 8 + Math.random() * 6;
